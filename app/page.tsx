@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import GoogleAds from '../components/GoogleAds';
 
 export default function Home() {
   const [search, setSearch] = useState('');
@@ -24,6 +25,7 @@ export default function Home() {
 
   return (
     <main className="flex items-center justify-center min-h-[calc(100vh-64px)] bg-neutral-900 text-neutral-100 px-4">
+      <GoogleAds/>
       <div className="max-w-6xl w-full text-center">
         <h1 className="text-5xl font-extrabold mb-4">🚀 DevTools</h1>
         <p className="text-lg text-neutral-400 mb-6">
@@ -57,6 +59,7 @@ export default function Home() {
           )}
         </div>
       </div>
+      <GoogleAds/>
     </main>
   );
 }
