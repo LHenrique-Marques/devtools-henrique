@@ -2,16 +2,15 @@ import '../styles/globals.css';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'DevTools',
   description: 'Ferramentas online, rápidas e gratuitas',
   icons: {
-    icon: '/favicon.png', // ou /favicon.ico
+    icon: '/favicon.png',
   },
-    other: {
+  other: {
     'google-adsense-account': 'ca-pub-1484005881693287',
   },
 };
@@ -19,7 +18,15 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-br">
-      <body className="bg-neutral-900 text-neutral-100 min-h-screen flex flex-col">
+      <head>
+        {/* 🔥 Script dos anúncios automáticos */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1484005881693287"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
+      <body className={`${inter.className} bg-neutral-900 text-neutral-100 min-h-screen flex flex-col`}>
         
         {/* HEADER */}
         <header className="bg-neutral-800 border-b border-neutral-700 sticky top-0 z-50">
@@ -29,10 +36,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <nav className="flex gap-6">
               <Link href="/" className="hover:text-red-500 transition">Home</Link>
-              <a href="https://portfolio-gamma-eight-31.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition">Meu Portfólio</a>
+              <a
+                href="https://portfolio-gamma-eight-31.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-red-500 transition"
+              >
+                Meu Portfólio
+              </a>
             </nav>
           </div>
-          
         </header>
 
         {/* CONTEÚDO */}
@@ -47,4 +60,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
