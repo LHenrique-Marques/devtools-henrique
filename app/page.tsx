@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main className="flex items-center justify-center min-h-[calc(100vh-64px)] bg-neutral-900 text-neutral-100 px-4">
       <div className="max-w-6xl w-full text-center">
-        <h1 className="text-5xl font-extrabold mb-4">🚀 DevTools do Henrique</h1>
+        <h1 className="text-5xl font-extrabold mb-4">🚀 DevTools</h1>
         <p className="text-lg text-neutral-400 mb-6">
           Ferramentas online, rápidas e gratuitas para desenvolvedores, designers e o dia a dia.
         </p>
