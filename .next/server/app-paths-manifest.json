@@ -1,1 +1,5 @@
-{}
+{
+  "/page": "app/page.js",
+  "/calculadora-porcentagem/page": "app/calculadora-porcentagem/page.js",
+  "/contador-caracteres/page": "app/contador-caracteres/page.js"
+}
