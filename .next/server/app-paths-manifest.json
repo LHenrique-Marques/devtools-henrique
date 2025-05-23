@@ -1,6 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/calculadora-porcentagem/page": "app/calculadora-porcentagem/page.js",
-  "/gerador-cpf/page": "app/gerador-cpf/page.js",
-  "/contador-caracteres/page": "app/contador-caracteres/page.js"
-}
