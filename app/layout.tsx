@@ -11,6 +11,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.png', // ou /favicon.ico
   },
+    other: {
+    'google-adsense-account': 'ca-pub-1484005881693287',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -20,7 +23,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         
         {/* HEADER */}
         <header className="bg-neutral-800 border-b border-neutral-700 sticky top-0 z-50">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1484005881693287" crossOrigin="anonymous"></script>
           <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
             <Link href="/" className="text-2xl font-bold text-white">
               🚀 DevTools
