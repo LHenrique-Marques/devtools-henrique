@@ -2,11 +2,15 @@ import '../styles/globals.css';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'DevTools',
   description: 'Ferramentas online, rápidas e gratuitas',
+  icons: {
+    icon: '/favicon.png', // ou /favicon.ico
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
