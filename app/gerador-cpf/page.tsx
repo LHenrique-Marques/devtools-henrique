@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
+
 function gerarCPF() {
   const n = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
   const mod = (base: number[], peso: number) => {
