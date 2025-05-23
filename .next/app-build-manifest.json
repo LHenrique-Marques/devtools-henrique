@@ -11,15 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/contador-caracteres/page": [
+    "/gerador-cpf/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contador-caracteres/page.js"
+      "static/chunks/app/gerador-cpf/page.js"
     ],
     "/calculadora-porcentagem/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/calculadora-porcentagem/page.js"
+    ],
+    "/contador-caracteres/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contador-caracteres/page.js"
     ]
   }
 }

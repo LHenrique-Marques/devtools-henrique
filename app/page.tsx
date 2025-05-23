@@ -25,6 +25,13 @@ export default function Home() {
             <h2 className="text-2xl font-semibold mb-2">📊 Calculadora de Porcentagem</h2>
             <p className="text-neutral-400">Calcule porcentagens de forma simples.</p>
           </Link>
+          <Link
+            href="/gerador-cpf"
+            className="bg-neutral-800 border border-neutral-700 rounded-2xl p-6 shadow-md hover:scale-105 hover:border-red-500 transition transform"
+            >
+            <h2 className="text-2xl font-semibold mb-2">🧾 Gerador de CPF</h2>
+            <p className="text-neutral-400">Gere CPFs válidos para testes.</p>
+          </Link>
 
           <Link
             href="#"

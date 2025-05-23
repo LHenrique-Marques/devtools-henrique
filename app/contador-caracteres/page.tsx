@@ -10,9 +10,9 @@ export default function ContadorCaracteres() {
 
   return (
     <main className="flex flex-col min-h-screen p-8">
-      <Link href="/" className="mb-4 text-red-400 hover:underline">&larr; Voltar</Link>
 
       <div className="bg-neutral-800 border border-neutral-700 rounded-2xl shadow-lg p-8 max-w-3xl mx-auto">
+        <Link href="/" className="mb-4 text-red-400 hover:underline">&larr; Voltar</Link>
         <h1 className="text-4xl font-bold mb-4">📝 Contador de Caracteres</h1>
         <p className="mb-6 text-neutral-400">Digite ou cole seu texto abaixo para contar caracteres e palavras.</p>
 
