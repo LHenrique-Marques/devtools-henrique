@@ -17,4 +17,4 @@ Acesse: http://localhost:3000
 - 📝 Contador de Caracteres
 - 📊 Calculadora de Porcentagem
 
-Novas ferramentas em breve 🚀#
+Novas ferramentas em breve 🚀#n
