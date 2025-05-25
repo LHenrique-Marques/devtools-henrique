@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-
+import ComoUtilizar from '../components/ComoUtilizar';
 export default function CalculadoraPorcentagem() {
   const [valor, setValor] = useState<number | ''>('');
   const [porcentagem, setPorcentagem] = useState<number | ''>('');
@@ -67,7 +67,17 @@ export default function CalculadoraPorcentagem() {
             <strong>Valor Final:</strong> {valorFinal.toFixed(2)}
           </p>
         </div>
+          <ComoUtilizar
+      itens={[
+        'No campo <strong>"Valor"</strong>, insira o número base que deseja calcular (ex.: <strong>150</strong>).',
+        'No campo <strong>"Porcentagem"</strong>, insira a taxa percentual (ex.: <strong>20</strong>).',
+        'O campo <strong>"Porcentagem Calculada"</strong> mostra o valor referente à porcentagem.',
+        'O campo <strong>"Valor Final"</strong> mostra o valor após o desconto ou subtração.',
+        'Use o botão <strong>Limpar</strong> para começar um novo cálculo.',
+      ]}
+    />
       </div>
     </main>
+    
   );
 }

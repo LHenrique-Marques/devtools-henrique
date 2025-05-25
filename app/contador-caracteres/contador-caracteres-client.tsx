@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import ComoUtilizar from '../components/ComoUtilizar';
 
 export default function ContadorCaracteres() {
   const [texto, setTexto] = useState('');
@@ -69,6 +70,17 @@ export default function ContadorCaracteres() {
             <p className="text-2xl font-bold">{linhas}</p>
           </div>
         </div>
+        <ComoUtilizar
+        itens={[
+          'Digite ou cole seu texto na área indicada.',
+          'O campo <strong>"Caracteres"</strong> mostra a quantidade total de caracteres, incluindo espaços.',
+          'O campo <strong>"Palavras"</strong> conta o número de palavras, separadas por espaços.',
+          'O campo <strong>"Linhas"</strong> indica quantas linhas existem no texto (cada quebra de linha conta).',
+          'Use o botão <strong>Limpar</strong> para apagar tudo e começar novamente.',
+          'Use o botão <strong>Copiar</strong> para copiar seu texto para a área de transferência.',
+        ]}
+      />
+
       </div>
     </main>
   );
