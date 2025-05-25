@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
-import ConversorBase64 from './conversor-base64-client';
+import ConversorBase64Client from './conversor-base64-client';
+
 export const metadata: Metadata = {
-  title: 'Contador de Caracteres | DevTools',
-  description: 'Calcule facilmente quantos caracteres e palavras tem no seu texto com essa ferramenta online gratuita do DevTools.',
+  title: 'Conversor Base64 | DevTools',
+  description: 'Codifique e decodifique textos em Base64 de forma simples e rápida.',
 };
 
 export default function Page() {
-  return <ConversorBase64/>;
-};
+  return <ConversorBase64Client />;
+}
