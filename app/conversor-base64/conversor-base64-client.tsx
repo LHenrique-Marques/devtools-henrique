@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-
+import ComoUtilizar from '../components/ComoUtilizar';
 export default function ConversorBase64() {
   const [input, setInput] = useState('');
   const [resultado, setResultado] = useState('');
@@ -99,6 +99,16 @@ export default function ConversorBase64() {
             placeholder="O resultado aparecerá aqui..."
           />
         </div>
+        <ComoUtilizar
+            itens={[
+                'Digite ou cole seu texto na área <strong>“Digite ou cole seu texto aqui...”</strong>.',
+                'Clique em <strong>“Codificar em Base64”</strong> para transformar seu texto em Base64.',
+                'Clique em <strong>“Decodificar de Base64”</strong> se quiser converter um texto Base64 de volta para texto normal.',
+                'O <strong>resultado</strong> aparecerá no campo abaixo dos botões.',
+                'Clique em <strong>“Copiar Resultado”</strong> para copiar o conteúdo gerado.',
+                'Use o botão <strong>“Limpar”</strong> para apagar os campos e começar um novo processo.',
+            ]}
+        />
       </div>
     </main>
   );
