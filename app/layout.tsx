@@ -17,11 +17,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-br">
       <head>
+        {/* Google Adsense */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1484005881693287"
           crossOrigin="anonymous"
         ></script>
+
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERMH66V5T7"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ERMH66V5T7');
+            `,
+          }}
+        />
       </head>
 
       <body className={`${inter.className} bg-neutral-900 text-neutral-100 min-h-screen flex flex-col`}>
