@@ -98,10 +98,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* CONTEÚDO */}
         <main className="flex-1">{children}</main>
 
-        {/* FOOTER */}
-        <footer className="bg-neutral-800 border border-neutral-700 rounded-2xl p-6 shadow-md">
-          <Footer/>
-        </footer>
+        
+        <Footer/>
         <AvisoCookies />
       </body>
     </html>
