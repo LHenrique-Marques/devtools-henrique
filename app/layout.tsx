@@ -2,14 +2,46 @@ import '../styles/globals.css';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'DevTools | Ferramentas Online',
-  description: 'Conjunto de ferramentas online para devs e criadores. Rápidas, simples e gratuitas.',
-  icons: {
-    icon: '/favicon.png',
+  title: 'DevTools | Ferramentas Online Gratuitas',
+  description: 'Conjunto de ferramentas online, rápidas e gratuitas para desenvolvedores e criadores. Confira todas as ferramentas disponíveis.',
+  keywords: [
+    'DevTools',
+    'Ferramentas para desenvolvedores',
+    'Gerador de CPF',
+    'Validador de CPF',
+    'Contador de caracteres',
+    'Base64',
+    'Gerador de UUID',
+    'Conversor Timestamp',
+    'JSON Formatter',
+    'Calculadora de Porcentagem',
+    'Gerador de Senha'
+  ],
+  openGraph: {
+    title: 'DevTools | Ferramentas Online',
+    description: 'Ferramentas úteis e gratuitas para desenvolvedores e criadores.',
+    url: 'https://thedevtools.com.br',
+    siteName: 'DevTools',
+    images: [
+      {
+        url: 'https://thedevtools.com.br/images/banner-devtools.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DevTools | Ferramentas Online',
+    description: 'Ferramentas úteis e gratuitas para desenvolvedores e criadores.',
+    images: ['https://thedevtools.com.br/images/banner-devtools.png'],
   },
 };
 
@@ -39,10 +71,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body className={`${inter.className} bg-neutral-900 text-neutral-100 min-h-screen flex flex-col`}>
-        
+
         {/* HEADER */}
-        <header className="bg-neutral-800 border-b border-neutral-700 sticky top-0 z-50 shadow-md">
-          <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <header className="bg-neutral-800 border border-neutral-700 rounded-2xl p-6 shadow-md">
+          <div className="max-w-7xl mx-auto flex justify-between items-center">
             <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/favicon.png"
@@ -52,23 +84,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 className="rounded-md"
               />
               <span className="text-2xl font-bold text-white hover:text-red-500 transition">
-                 DevTools
+                DevTools
               </span>
             </Link>
 
             <nav className="flex gap-6 text-sm md:text-base">
-              <Link
-                href="/"
-                className="hover:text-red-500 transition"
-              >
-                Início
-              </Link>
-              <Link
-                href="/sobre"
-                className="hover:text-red-500 transition"
-              >
-                Sobre
-              </Link>
+              <Link href="/" className="hover:text-red-500 transition">Início</Link>
+              <Link href="/sobre" className="hover:text-red-500 transition">Sobre</Link>
             </nav>
           </div>
         </header>
@@ -77,17 +99,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
 
         {/* FOOTER */}
-        <footer className="bg-neutral-800 border-t border-neutral-700 px-6 py-4 text-center text-sm text-neutral-400">
+        <footer className="bg-neutral-800 border border-neutral-700 rounded-2xl p-6 shadow-md">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>
-              © {new Date().getFullYear()} DevTools. Todos os direitos reservados.
-            </p>
+            <p>© {new Date().getFullYear()} DevTools. Todos os direitos reservados.</p>
             <div className="flex gap-4">
               <Link href="/" className="hover:text-red-500 transition">Início</Link>
               <Link href="/sobre" className="hover:text-red-500 transition">Sobre</Link>
             </div>
           </div>
         </footer>
+
+        {/* AVISO DE COOKIES */}
+        <div className="fixed bottom-4 right-4 bg-neutral-800 border border-neutral-700 p-4 rounded-xl shadow-md max-w-xs text-sm">
+          <p className="text-neutral-300">
+            Este site utiliza cookies para melhorar a experiência do usuário.{' '}
+            <Link href="/sobre" className="text-red-500 underline hover:text-red-400">Saiba mais</Link>.
+          </p>
+          <button
+            onClick={() => {
+              const el = document.getElementById('cookie-banner');
+              if (el) el.style.display = 'none';
+            }}
+            className="mt-2 px-3 py-1 bg-red-600 hover:bg-red-500 rounded text-white text-sm"
+          >
+            Ok, entendi
+          </button>
+        </div>
       </body>
     </html>
   );

@@ -5,16 +5,16 @@ export const metadata: Metadata = {
   title: 'Sobre | DevTools',
   description: 'Saiba mais sobre o projeto DevTools, quem desenvolveu e o objetivo das ferramentas online.',
   alternates: {
-    canonical: 'https://devtools-henrique.vercel.app/sobre',
+    canonical: 'https://thedevtools.com.br/sobre',
   },
   openGraph: {
     title: 'Sobre | DevTools',
     description: 'Saiba mais sobre o projeto DevTools, quem desenvolveu e o objetivo das ferramentas online.',
-    url: 'https://devtools-henrique.vercel.app/sobre',
+    url: 'https://thedevtools.com.br/sobre',
     siteName: 'DevTools',
     images: [
       {
-        url: 'https://devtools-henrique.vercel.app/images/banner-devtools.png',
+        url: 'https://thedevtools.com.br/images/banner-devtools.png',
         width: 1200,
         height: 630,
       },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sobre | DevTools',
     description: 'Saiba mais sobre o projeto DevTools, quem desenvolveu e o objetivo das ferramentas online.',
-    images: ['https://devtools-henrique.vercel.app/images/banner-devtools.png'],
+    images: ['https://thedevtools.com.br/images/banner-devtools.png'],
   },
 };
 
