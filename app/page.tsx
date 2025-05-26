@@ -23,7 +23,8 @@ export default function Home() {
   );
 
   return (
-    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] pt-24 pb-24">
+    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] text-neutral-100 px-4 pt-20 pb-32 
+bg-gradient-to-br">
       <div className="max-w-6xl w-full ">
 
         {/* HERO */}
