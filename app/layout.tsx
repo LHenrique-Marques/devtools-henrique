@@ -2,8 +2,7 @@ import '../styles/globals.css';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-
+import AvisoCookies from './components/AvisoCookies';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
@@ -108,23 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </footer>
-
-        {/* AVISO DE COOKIES */}
-        <div className="fixed bottom-4 right-4 bg-neutral-800 border border-neutral-700 p-4 rounded-xl shadow-md max-w-xs text-sm">
-          <p className="text-neutral-300">
-            Este site utiliza cookies para melhorar a experiência do usuário.{' '}
-            <Link href="/sobre" className="text-red-500 underline hover:text-red-400">Saiba mais</Link>.
-          </p>
-          <button
-            onClick={() => {
-              const el = document.getElementById('cookie-banner');
-              if (el) el.style.display = 'none';
-            }}
-            className="mt-2 px-3 py-1 bg-red-600 hover:bg-red-500 rounded text-white text-sm"
-          >
-            Ok, entendi
-          </button>
-        </div>
+        <AvisoCookies />
       </body>
     </html>
   );
