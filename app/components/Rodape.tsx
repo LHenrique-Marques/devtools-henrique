@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Imagem ou Banner */}
         <div className="lg:col-span-2">
           <img
-            src="/logo-footer.png" // 🔥 Coloque seu logo aqui
+            src="/banner-devtools.png" // 🔥 Coloque seu logo aqui
             alt="Logo DevTools"
             className="w-40"
           />
