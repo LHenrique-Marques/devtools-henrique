@@ -61,6 +61,8 @@ export default function Home() {
                     {tool.emoji} {tool.name}
                   </h2>
                   <p className="text-neutral-400">{tool.desc}</p>
+
+                  <p></p>
                 </Link>
               ))
             ) : (
