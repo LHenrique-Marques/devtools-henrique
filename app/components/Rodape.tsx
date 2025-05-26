@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin,Folder   } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -7,36 +7,12 @@ export default function Footer() {
     <footer className="bg-neutral-950 border-t border-neutral-800">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {/* Imagem ou Banner */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 flex flex-col items-start">
           <img
-            src="/banner-devtools.png" // 🔥 Coloque seu logo aqui
+            src="/banner2-devtools.png"
             alt="Logo DevTools"
-            className="w-40"
+            className="w-full max-w-[260px] object-contain"
           />
-          <p className="text-sm text-neutral-400 mt-4">
-            Ferramentas online, rápidas e gratuitas para desenvolvedores. Feito por Henrique.
-          </p>
-
-          <ul className="flex gap-4 mt-6">
-            <li>
-              <a href="https://github.com/LHenrique-Marques" target="_blank" rel="noreferrer">
-                <Github className="size-5 text-neutral-400 hover:text-white transition" />
-                <span className="sr-only">GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/marques.henriquevj/" target="_blank" rel="noreferrer">
-                <Instagram className="size-5 text-neutral-400 hover:text-white transition" />
-                <span className="sr-only">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/luis-henrique-marques-franque-flores-508ba126b/" target="_blank" rel="noreferrer">
-                <Linkedin className="size-5 text-neutral-400 hover:text-white transition" />
-                <span className="sr-only">LinkedIn</span>
-              </a>
-            </li>
-          </ul>
         </div>
 
         {/* Menu */}
@@ -112,6 +88,33 @@ export default function Footer() {
                 Política de Cookies
               </Link>
             </li>
+          </ul>
+                    <ul className="flex gap-4 mt-6">
+            <li>
+              <a href="https://github.com/LHenrique-Marques" target="_blank" rel="noreferrer">
+                <Github className="size-5 text-neutral-400 hover:text-white transition" />
+                <span className="sr-only">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/marques.henriquevj/" target="_blank" rel="noreferrer">
+                <Instagram className="size-5 text-neutral-400 hover:text-white transition" />
+                <span className="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/luis-henrique-marques-franque-flores-508ba126b/" target="_blank" rel="noreferrer">
+                <Linkedin className="size-5 text-neutral-400 hover:text-white transition" />
+                <span className="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+                <a href="https://portfolio-gamma-eight-31.vercel.app/" target="_blank" rel="noreferrer">
+                  <Folder   className="size-5 text-neutral-400 hover:text-white transition" />
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            
           </ul>
         </div>
       </div>
