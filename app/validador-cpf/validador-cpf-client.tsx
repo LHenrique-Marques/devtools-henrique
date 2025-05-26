@@ -50,9 +50,7 @@ export default function ValidadorCpfClient() {
 
   return (
     <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4">
-      <div className="bg-neutral-800 border border-neutral-700 rounded-2xl shadow-lg p-8 max-w-3xl w-full">
-        <Link href="/" className="text-red-400 hover:underline">&larr; Voltar</Link>
-
+      <div className="text-center rounded-2xl shadow-lg p-8 max-w-3xl w-full bg-gradient-to-br from-purple-800 via-neutral-950 to-black border border-neutral-800">
         <h1 className="text-4xl font-bold mb-4">🕵️‍♂️ Validador de CPF</h1>
         <p className="mb-6 text-neutral-400">
           Verifique se um <strong>CPF</strong> é válido segundo os critérios de validação.
@@ -65,13 +63,13 @@ export default function ValidadorCpfClient() {
           placeholder="Digite o CPF (apenas números ou formatado)"
           className="w-full p-5 border border-neutral-600 rounded-xl mb-4 bg-neutral-900 text-neutral-100 focus:outline-none focus:ring-2 focus:ring-red-500"
         />
-
+        <div className='flex justify-center'>
         <GrupoBotoes>
           <Botao onClick={validar}>Validar CPF</Botao>
           <Botao onClick={limpar}>Limpar</Botao>
           <Botao onClick={copiar} disabled={!resultado}>Copiar Resultado</Botao>
         </GrupoBotoes>
-
+        </div>
         <Resultado
           resultados={[
             resultado && { label: 'Resultado', valor: resultado },

@@ -24,21 +24,20 @@ export default function GeradorUuidClient() {
   };
 
   return (
-    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4">
-      <div className="bg-neutral-800 border border-neutral-700 rounded-2xl shadow-lg p-8 max-w-3xl w-full">
-        <Link href="/" className="text-red-400 hover:underline">&larr; Voltar</Link>
+    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4 pt-24 pb-24">
+      <div className="text-center rounded-2xl shadow-lg p-8 max-w-3xl w-full bg-gradient-to-br from-purple-800 via-neutral-950 to-black border border-neutral-800">
 
-        <h1 className="text-4xl font-bold mb-4">🆔 Gerador de UUID</h1>
+        <h1 className="text-4xl font-bold mb-4">Gerador de UUID</h1>
         <p className="mb-6 text-neutral-400">
           Gere <strong>UUIDs aleatórios</strong> para utilizar como identificadores únicos em sistemas, bancos de dados e APIs.
         </p>
-
+        <div className='flex justify-center'>
         <GrupoBotoes>
           <Botao onClick={gerar}>Gerar UUID</Botao>
           <Botao onClick={limpar}>Limpar</Botao>
           <Botao onClick={copiar} disabled={!uuid}>Copiar UUID</Botao>
         </GrupoBotoes>
-
+        </div>
         <Resultado
           resultados={[
             { label: 'UUID Gerado', valor: uuid },

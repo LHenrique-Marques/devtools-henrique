@@ -12,8 +12,10 @@ export function Botao({ children, onClick, disabled = false }: BotaoProps) {
       onClick={onClick}
       disabled={disabled}
       className={`${
-        disabled ? 'opacity-50 cursor-not-allowed' : 'hover:bg-neutral-600'
-      } bg-neutral-700 border border-neutral-600 rounded-xl px-4 py-2 transition`}
+        disabled
+          ? 'opacity-50 cursor-not-allowed'
+          : 'hover:bg-purple-500'
+      } bg-purple-600 border border-purple-700 rounded-xl px-4 py-2 transition text-white`}
     >
       {children}
     </button>

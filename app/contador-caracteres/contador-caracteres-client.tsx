@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import ComoUtilizar from '../components/ComoUtilizar';
 import Resultado from '../components/Resultado';
-import { Botao,GrupoBotoes } from '../components/Botoes';
+import { Botao, GrupoBotoes } from '../components/Botoes';
 
 export default function ContadorCaracteresClient() {
   const [texto, setTexto] = useState('');
@@ -20,11 +20,9 @@ export default function ContadorCaracteresClient() {
   };
 
   return (
-    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4">
-      <div className="bg-neutral-800 border border-neutral-700 rounded-2xl shadow-lg p-8 max-w-3xl w-full">
-        <Link href="/" className="text-red-400 hover:underline">&larr; Voltar</Link>
-
-        <h1 className="text-4xl font-bold mb-4">📝 Contador de Caracteres</h1>
+    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4 pt-24 pb-24">
+      <div className="rounded-2xl shadow-lg p-8 max-w-3xl w-full bg-gradient-to-br from-purple-950 via-neutral-850 to-black border border-neutral-800">
+        <h1 className="text-4xl font-bold mb-4 text-white text-center">Contador de Caracteres</h1>
         <p className="mb-6 text-neutral-400">
           Conte <strong>caracteres</strong>, <strong>palavras</strong> e <strong>linhas</strong> no seu texto.
         </p>
@@ -33,13 +31,16 @@ export default function ContadorCaracteresClient() {
           value={texto}
           onChange={(e) => setTexto(e.target.value)}
           rows={8}
-          className="w-full p-5 border border-neutral-600 rounded-xl mb-4 bg-neutral-900 text-neutral-100 resize-none focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-full p-5 border border-neutral-900 rounded-xl mb-4 bg-neutral-900 text-neutral-100 resize-none 
+          focus:outline-none focus:ring-2 focus:ring-purple-750"
           placeholder="Digite seu texto aqui..."
         />
 
         <GrupoBotoes>
           <Botao onClick={limpar}>Limpar</Botao>
-          <Botao onClick={copiar} disabled={!texto}>Copiar</Botao>
+          <Botao onClick={copiar} disabled={!texto}>
+            Copiar
+          </Botao>
         </GrupoBotoes>
 
         <Resultado

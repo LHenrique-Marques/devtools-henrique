@@ -34,15 +34,15 @@ export default function ContatoClient() {
   }
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold mb-4">📬 Contato</h1>
+    <main className="max-w-3xl mx-auto px-6 py-12 ">
+      <div className="rounded-2xl shadow-lg p-8 max-w-3xl w-full bg-gradient-to-br from-purple-800 via-neutral-950 to-black border border-neutral-800">
+      <h1 className="text-4xl font-bold mb-4 text-center">Contato</h1>
       <p className="text-neutral-400 mb-8">
         Tem alguma dúvida, sugestão ou encontrou algum problema? Me envie uma mensagem.
       </p>
 
       <form
         onSubmit={handleSubmit}
-        className="space-y-6 bg-neutral-800 border border-neutral-700 p-6 rounded-xl"
       >
         <div>
           <label className="block mb-1 text-sm">Nome</label>
@@ -95,6 +95,7 @@ export default function ContatoClient() {
           <p className="text-red-400 text-sm">Ocorreu um erro. Tente novamente.</p>
         )}
       </form>
+      </div>
     </main>
   )
 }

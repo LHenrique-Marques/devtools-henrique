@@ -1,43 +1,58 @@
-'use client';
+"use client";
 
-export default function PrivacidadeContent() {
+export default function ClientPrivacidade() {
   return (
-    <div className="bg-neutral-800 border border-neutral-700 rounded-2xl p-8 shadow-lg max-w-4xl w-full mx-auto pb-24">
-      <h1 className="text-4xl font-bold mb-6">🔐 Política de Privacidade</h1>
+    <main className="max-w-3xl mx-auto px-6 py-20 pb-24">
+      <h1 className="text-4xl font-bold mb-6 text-white">Política de Privacidade</h1>
 
-      <p className="mb-4 text-neutral-300">
-        No <strong>DevTools</strong>, levamos sua privacidade a sério. Esta política explica como coletamos, usamos e protegemos suas informações.
+      <p className="text-neutral-400 mb-4">
+        Sua privacidade é importante para nós. Esta Política de Privacidade descreve como coletamos,
+        usamos e protegemos suas informações ao utilizar o <strong>DevTools</strong>.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">📑 Coleta de Dados</h2>
-      <p className="mb-4 text-neutral-400">
-        Coletamos informações de navegação de forma anônima, incluindo cookies e dados de uso, para melhorar sua experiência no site e exibir anúncios relevantes.
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Quais dados coletamos?</h2>
+      <p className="text-neutral-400 mb-4">
+        Coletamos informações fornecidas voluntariamente, como nome e e-mail no formulário de
+        contato. Também coletamos dados de navegação de forma automática, como endereço IP e dados
+        de cookies, para melhorar sua experiência.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">🗂️ Dados Utilizados</h2>
-      <p className="mb-4 text-neutral-400">
-        Utilizamos ferramentas como Google Analytics e Google Adsense, que podem coletar cookies e dados anonimizados para análise e publicidade.
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Uso das informações</h2>
+      <p className="text-neutral-400 mb-4">
+        As informações coletadas são usadas para:
+      </p>
+      <ul className="list-disc list-inside text-neutral-400 space-y-2">
+        <li>Responder dúvidas ou solicitações enviadas via contato.</li>
+        <li>Melhorar o desempenho, funcionalidades e conteúdo do site.</li>
+        <li>Analisar dados para entender como os usuários utilizam nossas ferramentas.</li>
+        <li>Exibir anúncios relevantes (quando aplicável).</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Compartilhamento de dados</h2>
+      <p className="text-neutral-400 mb-4">
+        Não compartilhamos seus dados pessoais com terceiros, exceto quando necessário para
+        cumprimento de obrigações legais ou prestação de serviços como hospedagem e análises.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">🔒 Segurança</h2>
-      <p className="mb-4 text-neutral-400">
-        Seus dados estão protegidos. Não coletamos dados sensíveis ou pessoais como nome, CPF, e-mail ou telefone.
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Seus direitos</h2>
+      <p className="text-neutral-400 mb-4">
+        Você pode solicitar a correção, atualização ou exclusão de seus dados pessoais a qualquer
+        momento, entrando em contato conosco.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">📜 Consentimento</h2>
-      <p className="mb-4 text-neutral-400">
-        Ao utilizar este site, você concorda com o uso de cookies e com nossa política de privacidade.
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Alterações</h2>
+      <p className="text-neutral-400 mb-4">
+        Podemos atualizar esta política periodicamente. Recomendamos que você consulte esta página
+        regularmente.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">🔗 Serviços de Terceiros</h2>
-      <p className="mb-4 text-neutral-400">
-        Podemos exibir anúncios do Google Adsense e utilizar Google Analytics. Confira mais informações nas <a href="https://policies.google.com/technologies/ads?hl=pt-BR" target="_blank" className="text-red-500 underline">Políticas do Google</a>.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6 mb-2">✉️ Contato</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Contato</h2>
       <p className="text-neutral-400">
-        Para qualquer dúvida sobre nossa política, entre em contato pelo e-mail: <span className="text-red-500">henrique.marquesvj@gmail.com</span>
+        Dúvidas sobre esta Política? Envie um e-mail para:
+        <a href="mailto:henrique.marquesvj@gmail.com" className="text-blue-400 hover:underline ml-1">
+          henrique.marquesvj@gmail.com
+        </a>
       </p>
-    </div>
+    </main>
   );
 }

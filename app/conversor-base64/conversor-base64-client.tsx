@@ -39,11 +39,10 @@ export default function ConversorBase64Client() {
   };
 
   return (
-    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4">
-      <div className="bg-neutral-800 border border-neutral-700 rounded-2xl shadow-lg p-8 max-w-4xl w-full">
-        <Link href="/" className="text-red-400 hover:underline">&larr; Voltar</Link>
+    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4 pt-24 pb-24">
+      <div className="rounded-2xl shadow-lg p-8 max-w-3xl w-full bg-gradient-to-br from-purple-800 via-neutral-950 to-black border border-neutral-800">
 
-        <h1 className="text-4xl font-bold mb-4">🔄 Conversor Base64</h1>
+        <h1 className="text-4xl font-bold mb-4"> Conversor Base64</h1>
         <p className="mb-6 text-neutral-400">
           Codifique textos para <strong>Base64</strong> ou decodifique de <strong>Base64</strong> para texto normal.
         </p>

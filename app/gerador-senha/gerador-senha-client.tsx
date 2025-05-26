@@ -45,17 +45,15 @@ export default function GeradorSenhaClient() {
   };
 
   return (
-    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4">
-      <div className="bg-neutral-800 border border-neutral-700 rounded-2xl shadow-lg p-8 max-w-3xl w-full">
-        <Link href="/" className="text-red-400 hover:underline">&larr; Voltar</Link>
-
-        <h1 className="text-4xl font-bold mb-4">🔐 Gerador de Senhas</h1>
+    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4 pt-24 pb-24">
+      <div className="text-center rounded-2xl shadow-lg p-8 max-w-3xl w-full bg-gradient-to-br from-purple-800 via-neutral-950 to-black border border-neutral-800">
+        <h1 className="text-4xl font-bold mb-4 ">Gerador de Senhas</h1>
         <p className="mb-6 text-neutral-400">
           Gere <strong>senhas seguras</strong> com as opções que desejar.
         </p>
 
         {/* Configurações */}
-        <div className="flex flex-col gap-4 mb-6">
+        <div className="flex justify-center items-center flex-col gap-4 mb-6">
           <label className="flex items-center gap-2">
             <span className="text-neutral-300 w-[120px]">Tamanho:</span>
             <input
@@ -106,12 +104,13 @@ export default function GeradorSenhaClient() {
         </div>
 
         {/* Botões */}
+        <div className='flex justify-center'>
         <GrupoBotoes>
           <Botao onClick={gerar}>Gerar Senha</Botao>
           <Botao onClick={limpar}>Limpar</Botao>
           <Botao onClick={copiar} disabled={!senha}>Copiar Senha</Botao>
         </GrupoBotoes>
-
+        </div>
         {/* Resultado */}
         <Resultado
           resultados={[

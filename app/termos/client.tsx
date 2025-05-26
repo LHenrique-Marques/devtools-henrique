@@ -1,43 +1,47 @@
-'use client';
+"use client";
 
-export default function TermosContent() {
+export default function ClientTermos() {
   return (
-    <div className="bg-neutral-800 border border-neutral-700 rounded-2xl p-8 shadow-lg max-w-4xl w-full mx-auto pb-24">
-      <h1 className="text-4xl font-bold mb-6">📜 Termos de Uso</h1>
+    <main className="max-w-3xl mx-auto px-6 py-20 pb-24">
+      <h1 className="text-4xl font-bold mb-6 text-white">Termos de Uso</h1>
 
-      <p className="mb-4 text-neutral-300">
-        Bem-vindo ao <strong>DevTools</strong>. Ao acessar este site, você concorda com os presentes Termos de Uso. Caso não concorde, recomendamos que não utilize nossos serviços.
+      <p className="text-neutral-400 mb-4">
+        Ao acessar e utilizar o <strong>DevTools</strong>, você concorda com os termos e condições
+        descritos abaixo. Caso não concorde, por favor, não utilize este site.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">1. 🔧 Uso das Ferramentas</h2>
-      <p className="mb-4 text-neutral-400">
-        As ferramentas disponibilizadas são gratuitas, online e destinadas a fins educacionais, profissionais ou pessoais. O usuário é responsável pelo uso correto das ferramentas.
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Uso das ferramentas</h2>
+      <p className="text-neutral-400 mb-4">
+        As ferramentas oferecidas são gratuitas e destinadas a fins educacionais, profissionais e
+        pessoais. O uso indevido, ilegal ou que cause prejuízo a terceiros é proibido.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">2. 🚫 Limitações</h2>
-      <p className="mb-4 text-neutral-400">
-        Não garantimos que as ferramentas sejam livres de erros ou interrupções. O DevTools não se responsabiliza por eventuais danos diretos ou indiretos decorrentes do uso do site.
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Limitações de responsabilidade</h2>
+      <p className="text-neutral-400 mb-4">
+        Embora nos esforcemos para garantir que todas as ferramentas estejam funcionando corretamente,
+        não garantimos que sejam livres de erros, interrupções ou que sejam adequadas a qualquer
+        finalidade específica.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">3. 🔐 Privacidade e Dados</h2>
-      <p className="mb-4 text-neutral-400">
-        A utilização do site implica na aceitação da nossa <a href="/privacidade" className="text-red-500 underline">Política de Privacidade</a>, que explica como coletamos e usamos dados anônimos de navegação, como cookies e dados de terceiros (Google Analytics, Adsense).
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Propriedade intelectual</h2>
+      <p className="text-neutral-400 mb-4">
+        Todo o conteúdo, incluindo textos, logos, imagens e códigos, pertence ao <strong>DevTools</strong>
+        e não pode ser copiado, distribuído ou reproduzido sem autorização.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">4. 🔗 Links Externos</h2>
-      <p className="mb-4 text-neutral-400">
-        O site pode conter links para sites externos que não são controlados por nós. Não nos responsabilizamos pelo conteúdo ou práticas desses sites.
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Modificações nos termos</h2>
+      <p className="text-neutral-400 mb-4">
+        Reservamos o direito de modificar estes Termos de Uso a qualquer momento, sem aviso prévio.
+        É sua responsabilidade revisá-los periodicamente.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">5. ⚙️ Modificações</h2>
-      <p className="mb-4 text-neutral-400">
-        Reservamos o direito de alterar, atualizar ou remover qualquer conteúdo, funcionalidade ou estes Termos de Uso a qualquer momento, sem aviso prévio.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6 mb-2">6. ✉️ Contato</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-white">Contato</h2>
       <p className="text-neutral-400">
-        Para dúvidas sobre estes termos, entre em contato pelo e-mail: <span className="text-red-500">henrique.marquesvj@gmail.com</span>
+        Para dúvidas sobre estes termos, entre em contato através do e-mail:
+        <a href="mailto:henrique.marquesvj@gmail.com" className="text-blue-400 hover:underline ml-1">
+          henrique.marquesvj@gmail.com
+        </a>
       </p>
-    </div>
+    </main>
   );
 }

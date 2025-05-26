@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
 
-      <body className={`${inter.className} bg-neutral-900 text-neutral-100 min-h-screen flex flex-col`}>
+      <body className={`${inter.className} bg-neutral-900 text-neutral-100 min-h-screen flex flex-col bg-[url('/background.png')] bg-cover bg-center`}>
 
         {/* HEADER */}
         <Header/>

@@ -5,8 +5,9 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <header className="bg-neutral-900 border-b border-neutral-700 sticky top-0 z-50">
+    <header className="bg-gradient-to-br from-purple-950 via-neutral-850 to-black border-b border-neutral-800 shadow-md">
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-6">
+        
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2">
           <Image

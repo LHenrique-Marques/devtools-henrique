@@ -6,8 +6,9 @@ import { Github, Linkedin, Globe } from 'lucide-react';
 
 export default function SobreClient() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-12">
+    <main className="max-w-3xl mx-auto px-6 py-12 ">
       {/* Cabeçalho */}
+      <div className="rounded-2xl shadow-lg p-8 max-w-3xl w-full bg-gradient-to-br from-purple-800 via-neutral-950 to-black border border-neutral-800">
       <div className="flex items-center gap-4 mb-8">
         <Image
           src="/avatar.jpeg" // 👉 Coloca sua foto aqui
@@ -23,8 +24,8 @@ export default function SobreClient() {
       </div>
 
       {/* Sobre o projeto */}
-      <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-6 mb-8 shadow-lg">
-        <h2 className="text-2xl font-semibold mb-4">🚀 Sobre o DevTools</h2>
+      <div>
+        <h2 className="text-2xl font-semibold mb-4">Sobre o DevTools</h2>
         <p className="text-neutral-400 mb-4">
           O <strong>DevTools</strong> é um conjunto de ferramentas online, rápidas e gratuitas, 
           criadas para ajudar desenvolvedores, criadores de conteúdo e qualquer pessoa que 
@@ -40,8 +41,8 @@ export default function SobreClient() {
       </div>
 
       {/* Tecnologias */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">🛠️ Tecnologias Usadas</h2>
+      <div className="mb-8 pt-10">
+        <h2 className="text-2xl font-semibold mb-4">Tecnologias Usadas</h2>
         <div className="flex flex-wrap gap-4">
           <span className="bg-neutral-800 px-4 py-2 rounded-full border border-neutral-700">Next.js</span>
           <span className="bg-neutral-800 px-4 py-2 rounded-full border border-neutral-700">React</span>
@@ -52,7 +53,7 @@ export default function SobreClient() {
 
       {/* Links */}
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">🔗 Me encontre também</h2>
+        <h2 className="text-2xl font-semibold mb-4">Me encontre também</h2>
         <div className="flex gap-6">
           <Link
             href="https://github.com/LHenrique-Marques"
@@ -77,11 +78,7 @@ export default function SobreClient() {
           </Link>
         </div>
       </div>
-
-      {/* Voltar */}
-      <Link href="/" className="text-red-400 hover:underline">
-        &larr; Voltar para a Home
-      </Link>
+      </div>
     </main>
   );
 }

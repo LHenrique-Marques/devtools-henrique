@@ -1,10 +1,10 @@
 import React from "react";
-import { Github, Instagram, Linkedin,Folder   } from "lucide-react";
+import { Github, Instagram, Linkedin, Folder } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-950 border-t border-neutral-800">
+    <footer className="bg-gradient-to-br from-purple-950 via-neutral-960 to-black border-t border-neutral-500">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {/* Imagem ou Banner */}
         <div className="lg:col-span-2 flex flex-col items-start">
@@ -74,7 +74,7 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-4">Legal</h4>
           <ul className="space-y-3 text-sm text-neutral-400">
             <li>
-              <Link href="/cookies" className="hover:text-white">
+              <Link href="/termos" className="hover:text-white">
                 Termos de Uso
               </Link>
             </li>
@@ -84,12 +84,13 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/termos" className="hover:text-white">
+              <Link href="/cookies" className="hover:text-white">
                 Política de Cookies
               </Link>
             </li>
           </ul>
-                    <ul className="flex gap-4 mt-6">
+
+          <ul className="flex gap-4 mt-6">
             <li>
               <a href="https://github.com/LHenrique-Marques" target="_blank" rel="noreferrer">
                 <Github className="size-5 text-neutral-400 hover:text-white transition" />
@@ -109,12 +110,11 @@ export default function Footer() {
               </a>
             </li>
             <li>
-                <a href="https://portfolio-gamma-eight-31.vercel.app/" target="_blank" rel="noreferrer">
-                  <Folder   className="size-5 text-neutral-400 hover:text-white transition" />
-                  <span className="sr-only">LinkedIn</span>
-                </a>
+              <a href="https://portfolio-gamma-eight-31.vercel.app/" target="_blank" rel="noreferrer">
+                <Folder className="size-5 text-neutral-400 hover:text-white transition" />
+                <span className="sr-only">Portfólio</span>
+              </a>
             </li>
-            
           </ul>
         </div>
       </div>
@@ -124,9 +124,7 @@ export default function Footer() {
           <p className="text-xs text-neutral-500">
             &copy; {new Date().getFullYear()} DevTools do Henrique. Todos os direitos reservados.
           </p>
-          <p className="text-xs text-neutral-500">
-            Feito por Henrique Marques
-          </p>
+          <p className="text-xs text-neutral-500">Feito por Henrique Marques</p>
         </div>
       </div>
     </footer>
