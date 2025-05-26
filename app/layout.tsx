@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'DevTools | Ferramentas Online Gratuitas',
   description: 'Conjunto de ferramentas online, rápidas e gratuitas para desenvolvedores e criadores. Confira todas as ferramentas disponíveis.',
+  icons:{
+    icon:'/favicon.png'
+  },
   keywords: [
     'DevTools',
     'Ferramentas para desenvolvedores',
