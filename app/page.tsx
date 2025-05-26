@@ -23,7 +23,7 @@ export default function Home() {
   );
 
   return (
-    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] bg-neutral-900 text-neutral-100 px-4 pt-16">
+    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] bg-neutral-900 text-neutral-100 px-4 pt-16 pb-24">
       <div className="max-w-6xl w-full">
 
         {/* HERO */}
@@ -61,8 +61,6 @@ export default function Home() {
                     {tool.emoji} {tool.name}
                   </h2>
                   <p className="text-neutral-400">{tool.desc}</p>
-
-                  <p></p>
                 </Link>
               ))
             ) : (
