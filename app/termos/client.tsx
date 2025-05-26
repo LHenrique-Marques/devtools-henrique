@@ -2,7 +2,7 @@
 
 export default function TermosContent() {
   return (
-    <div className="bg-neutral-800 border border-neutral-700 rounded-2xl p-8 shadow-lg max-w-4xl w-full mx-auto">
+    <div className="bg-neutral-800 border border-neutral-700 rounded-2xl p-8 shadow-lg max-w-4xl w-full mx-auto pb-24">
       <h1 className="text-4xl font-bold mb-6">📜 Termos de Uso</h1>
 
       <p className="mb-4 text-neutral-300">
@@ -36,7 +36,7 @@ export default function TermosContent() {
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">6. ✉️ Contato</h2>
       <p className="text-neutral-400">
-        Para dúvidas sobre estes termos, entre em contato pelo e-mail: <span className="text-red-500">contato@thedevtools.com.br</span>
+        Para dúvidas sobre estes termos, entre em contato pelo e-mail: <span className="text-red-500">henrique.marquesvj@gmail.com</span>
       </p>
     </div>
   );

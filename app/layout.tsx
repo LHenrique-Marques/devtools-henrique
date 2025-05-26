@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
 import AvisoCookies from './components/AvisoCookies';
+import Footer from './components/Rodape';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
@@ -99,13 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* FOOTER */}
         <footer className="bg-neutral-800 border border-neutral-700 rounded-2xl p-6 shadow-md">
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© {new Date().getFullYear()} DevTools. Todos os direitos reservados.</p>
-            <div className="flex gap-4">
-              <Link href="/" className="hover:text-red-500 transition">Início</Link>
-              <Link href="/sobre" className="hover:text-red-500 transition">Sobre</Link>
-            </div>
-          </div>
+          <Footer/>
         </footer>
         <AvisoCookies />
       </body>
