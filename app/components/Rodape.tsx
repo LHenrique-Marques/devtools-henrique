@@ -41,20 +41,20 @@ export default function Footer() {
 
         {/* Menu */}
         <div>
-          <h4 className="text-white font-semibold mb-4">Ferramentas</h4>
+          <h4 className="text-white font-semibold mb-4">Ferramentas Principais</h4>
           <ul className="space-y-3 text-sm text-neutral-400">
             <li>
-              <Link href="/char-counter" className="hover:text-white">
+              <Link href="/contador-caracteres" className="hover:text-white">
                 Contador de Caracteres
               </Link>
             </li>
             <li>
-              <Link href="/password-generator" className="hover:text-white">
+              <Link href="/gerador-senha" className="hover:text-white">
                 Gerador de Senhas
               </Link>
             </li>
             <li>
-              <Link href="/base64" className="hover:text-white">
+              <Link href="/conversor-base64" className="hover:text-white">
                 Conversor Base64
               </Link>
             </li>
@@ -64,12 +64,12 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/timestamp" className="hover:text-white">
+              <Link href="/conversor-timestamp" className="hover:text-white">
                 Conversor de Timestamp
               </Link>
             </li>
             <li>
-              <Link href="/uuid-generator" className="hover:text-white">
+              <Link href="/gerador-uuid" className="hover:text-white">
                 Gerador de UUID
               </Link>
             </li>
