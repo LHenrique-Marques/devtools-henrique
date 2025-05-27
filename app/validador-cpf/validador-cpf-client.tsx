@@ -49,7 +49,7 @@ export default function ValidadorCpfClient() {
   };
 
   return (
-    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4">
+    <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4 pt-24 pb-24">
       <div className="text-center rounded-2xl shadow-lg p-8 max-w-3xl w-full bg-gradient-to-br from-purple-800 via-neutral-950 to-black border border-neutral-800">
         <h1 className="text-4xl font-bold mb-4">🕵️‍♂️ Validador de CPF</h1>
         <p className="mb-6 text-neutral-400">
@@ -75,6 +75,18 @@ export default function ValidadorCpfClient() {
             resultado && { label: 'Resultado', valor: resultado },
           ]}
         />
+        {/* Descrição SEO e Explicação */}
+        <div className="mb-6 pt-24">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            O que é um Validador de CPF?
+          </h2>
+          <p className="text-neutral-400 mb-2">
+            O Validador de CPF é uma ferramenta online que permite <strong>verificar se um CPF é válido</strong> segundo os critérios matemáticos definidos pela Receita Federal do Brasil. Ele verifica se os dígitos verificadores estão corretos, garantindo que o número informado segue a regra de formação de um CPF.
+          </p>
+          <p className="text-neutral-400">
+            Essa validação é extremamente útil para desenvolvedores, empresas, sistemas de cadastro e aplicações que precisam garantir que um CPF inserido pelo usuário não possui erros de digitação. A validação é feita diretamente no navegador, de forma gratuita, rápida, sem necessidade de cadastro e com total segurança.
+          </p>
+        </div>
 
         <ComoUtilizar
           itens={[

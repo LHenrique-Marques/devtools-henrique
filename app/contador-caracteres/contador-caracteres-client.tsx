@@ -21,6 +21,7 @@ export default function ContadorCaracteresClient() {
 
   return (
     <main className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4 pt-24 pb-24">
+      
       <div className="rounded-2xl shadow-lg p-8 max-w-3xl w-full bg-gradient-to-br from-purple-950 via-neutral-850 to-black border border-neutral-800">
         <h1 className="text-4xl font-bold mb-4 text-white text-center">Contador de Caracteres</h1>
         <p className="mb-6 text-neutral-400">
@@ -50,6 +51,18 @@ export default function ContadorCaracteresClient() {
             { label: 'Linhas', valor: linhas.toString() },
           ]}
         />
+                {/* Descrição SEO e Explicação */}
+        <div className="mb-6 pt-24">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            O que é um Contador de Caracteres?
+          </h2>
+          <p className="text-neutral-400 mb-2">
+            O contador de caracteres é uma ferramenta online que permite contar rapidamente o número de <strong>caracteres</strong>, <strong>palavras</strong> e <strong>linhas</strong> em qualquer texto. É muito utilizado por redatores, desenvolvedores, criadores de conteúdo, estudantes e profissionais que precisam atender a limites de texto, como em redes sociais, descrições, artigos, códigos ou formulários.
+          </p>
+          <p className="text-neutral-400">
+            Basta colar ou digitar seu texto na caixa e obter instantaneamente as contagens, de forma precisa e gratuita. Nenhum dado é armazenado e tudo funciona diretamente no seu navegador, sem necessidade de cadastro.
+          </p>
+        </div>
 
         <ComoUtilizar
           itens={[
@@ -61,7 +74,9 @@ export default function ContadorCaracteresClient() {
             'Use <strong>Copiar</strong> para copiar o texto.',
           ]}
         />
+        
       </div>
     </main>
+    
   );
 }

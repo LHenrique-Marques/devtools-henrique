@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { Botao, GrupoBotoes } from '../components/Botoes';
 import Resultado from '../components/Resultado';
 import ComoUtilizar from '../components/ComoUtilizar';
@@ -34,7 +33,6 @@ export default function CalculadoraPorcentagemClient() {
         <p className="mb-6 text-neutral-400">
           Informe um valor e uma porcentagem para calcular descontos, acréscimos ou proporções.
         </p>
-
         {/* Inputs */}
         <div className="flex flex-col gap-4 mb-6">
           <input
@@ -67,6 +65,18 @@ export default function CalculadoraPorcentagemClient() {
             { label: 'Valor Final', valor: valorFinal.toFixed(2) },
           ]}
         />
+                {/* Descrição SEO e Explicação */}
+        <div className="mb-6 pt-24">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            O que é uma Calculadora de Porcentagem?
+          </h2>
+          <p className="text-neutral-400 mb-2">
+            A calculadora de porcentagem é uma ferramenta online que permite calcular descontos, acréscimos, proporções ou qualquer valor percentual de forma rápida e precisa. Ideal para quem precisa fazer cálculos financeiros, ajustes de preços, análises estatísticas ou qualquer atividade que envolva porcentagem.
+          </p>
+          <p className="text-neutral-400">
+            Insira um valor base e a porcentagem desejada para obter rapidamente tanto o valor correspondente à porcentagem quanto o valor final após aplicar esse percentual. Tudo de forma simples, gratuita e sem necessidade de cadastro.
+          </p>
+        </div>
 
         {/* Como utilizar */}
         <ComoUtilizar

@@ -57,7 +57,18 @@ export default function JsonFormatterClient() {
             { label: 'JSON Formatado', valor: resultado },
           ]}
         />
-
+        {/* Descrição SEO e Explicação */}
+        <div className="mb-6 pt-24">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            O que é um JSON Formatter?
+          </h2>
+          <p className="text-neutral-400 mb-2">
+            O JSON Formatter é uma ferramenta online que permite <strong>validar, formatar e visualizar JSON</strong> de forma clara e organizada. Ele ajuda desenvolvedores, analistas e profissionais de tecnologia a entender e identificar rapidamente erros de sintaxe, estruturas incorretas e a melhorar a legibilidade de dados em formato JSON.
+          </p>
+          <p className="text-neutral-400">
+            Cole seu JSON na caixa de texto para obter uma visualização formatada e identar os dados corretamente. Esta ferramenta é essencial para quem trabalha com APIs, bancos de dados NoSQL, desenvolvimento web e integrações de sistemas. Tudo funciona diretamente no navegador, sem custos, sem cadastro e de forma 100% segura.
+          </p>
+        </div>
         <ComoUtilizar
           itens={[
             'Cole ou digite seu conteúdo no formato <strong>JSON</strong> na área acima.',

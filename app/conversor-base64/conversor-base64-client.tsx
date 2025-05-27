@@ -69,6 +69,19 @@ export default function ConversorBase64Client() {
             { label: 'Resultado', valor: resultado },
           ]}
         />
+        {/* Descrição SEO e Explicação */}
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            O que é um Conversor Base64?
+          </h2>
+          <p className="text-neutral-400 mb-2">
+            O Conversor Base64 é uma ferramenta online que permite transformar qualquer texto em código Base64 e vice-versa. O Base64 é um método de codificação que converte dados em uma sequência de caracteres ASCII, frequentemente utilizado para transferir dados em formatos como JSON, XML e APIs, além de ser muito usado no desenvolvimento web para codificar imagens, arquivos e dados sensíveis.
+          </p>
+          <p className="text-neutral-400">
+            Use esta ferramenta para codificar textos em Base64 ou decodificar de forma simples, rápida e gratuita, diretamente no seu navegador. Nenhum dado é armazenado e o processo é 100% seguro.
+          </p>
+        </div>
+
 
         <ComoUtilizar
           itens={[

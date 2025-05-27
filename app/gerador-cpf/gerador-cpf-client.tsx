@@ -76,6 +76,18 @@ export default function GeradorCpfClient() {
             { label: 'CPF Gerado', valor: cpf },
           ]}
         />
+        {/* Descrição SEO e Explicação */}
+        <div className="mb-6 pt-24">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            O que é um Gerador de CPF?
+          </h2>
+          <p className="text-neutral-400 mb-2">
+            O Gerador de CPF é uma ferramenta online que permite criar <strong>números de CPF válidos</strong> para uso em testes de sistemas, cadastros, softwares e aplicações em desenvolvimento. Esses CPFs gerados passam pelas regras matemáticas de validação, mas <strong>não pertencem a pessoas reais</strong>, sendo exclusivamente para fins de teste.
+          </p>
+          <p className="text-neutral-400">
+            Utilize este gerador para preencher campos obrigatórios em formulários, validar lógicas de cadastro ou testar APIs que exigem CPF. Tudo isso de forma gratuita, rápida e segura, diretamente no navegador, sem a necessidade de cadastro ou instalação.
+          </p>
+        </div>
         <ComoUtilizar
           itens={[
             'Clique em <strong>“Gerar CPF”</strong> para gerar um CPF válido aleatório.',

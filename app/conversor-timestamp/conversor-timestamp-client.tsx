@@ -79,6 +79,18 @@ export default function ConversorTimestampClient() {
             data && { label: 'Data', valor: data },
           ]}
         />
+        {/* Descrição SEO e Explicação */}
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            O que é um Conversor de Timestamp?
+          </h2>
+          <p className="text-neutral-400 mb-2">
+            O Conversor de Timestamp é uma ferramenta online que permite converter facilmente entre <strong>Timestamp UNIX</strong> (tempo em segundos desde 1º de janeiro de 1970) e uma <strong>data legível</strong> no formato convencional. É uma solução muito útil para desenvolvedores, analistas de dados e profissionais que lidam com bancos de dados, APIs e logs de sistemas.
+          </p>
+          <p className="text-neutral-400">
+            Com ele, você pode transformar um timestamp em uma data e hora compreensível, ou converter uma data e hora específicas em timestamp UNIX. Tudo de forma rápida, gratuita e diretamente no seu navegador, sem necessidade de cadastro ou instalação.
+          </p>
+        </div>
 
         {/* Como utilizar */}
         <ComoUtilizar

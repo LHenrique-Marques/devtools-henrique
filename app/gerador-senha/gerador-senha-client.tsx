@@ -117,7 +117,18 @@ export default function GeradorSenhaClient() {
             { label: 'Senha Gerada', valor: senha },
           ]}
         />
-
+        {/* Descrição SEO e Explicação */}
+        <div className="mb-6 pt-24">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            O que é um Gerador de Senhas?
+          </h2>
+          <p className="text-neutral-400 mb-2">
+            O Gerador de Senhas é uma ferramenta online que cria <strong>senhas seguras, aleatórias e robustas</strong> para proteger suas contas, sistemas e dados. As senhas geradas podem conter letras maiúsculas, minúsculas, números e caracteres especiais, aumentando significativamente sua segurança contra tentativas de invasão.
+          </p>
+          <p className="text-neutral-400">
+            Use este gerador para criar senhas fortes para e-mails, redes sociais, plataformas de trabalho, servidores, bancos de dados e qualquer outro serviço que exija proteção. Tudo funciona diretamente no navegador, sem custos, sem cadastro e de forma 100% segura.
+          </p>
+        </div>
         {/* Como utilizar */}
         <ComoUtilizar
           itens={[
