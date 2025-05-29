@@ -22,7 +22,7 @@ Novas ferramentas são adicionadas conforme sugestões da comunidade.
 
 ## 🚀 Demonstração
 
-![DevTools Screenshot](./public/devtools-preview.png) <!-- Substitua pelo caminho real do seu print -->
+![DevTools Screenshot](./public/image.png) <!-- Substitua pelo caminho real do seu print -->
 
 ---
 
