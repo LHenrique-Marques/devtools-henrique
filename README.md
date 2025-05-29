@@ -59,7 +59,7 @@ O projeto estará disponível em [http://localhost:3000](http://localhost:3000).
 
 Sugestões, correções e novas ferramentas são muito bem-vindas!
 
-1. [Abra uma issue](https://github.com/LHenrique-Marques/devtools-henrique/issues) com sua sugestão ou bug encontrado
+1. [Abra uma issue](https://github.com/lhmarquesdev/devtools-henrique/issues) com sua sugestão ou bug encontrado
 2. Faça um fork do projeto
 3. Crie uma branch (`git checkout -b minha-feature`)
 4. Faça o commit (`git commit -m 'feat: minha nova feature'`)
@@ -73,4 +73,4 @@ MIT
 
 ---
 
-Desenvolvido por [Henrique Marques](https://www.linkedin.com/in/lhmarquesdev/)
+Desenvolvido por [Henrique Marques](https://www.linkedin.com/in/luis-henrique-marques-508ba126b/)
