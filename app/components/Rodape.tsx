@@ -92,19 +92,19 @@ export default function Footer() {
 
           <ul className="flex gap-4 mt-6">
             <li>
-              <a href="https://github.com/LHenrique-Marques" target="_blank" rel="noreferrer">
+              <a href="https://github.com/lhmarquesdev" target="_blank" rel="noreferrer">
                 <Github className="size-5 text-neutral-400 hover:text-white transition" />
                 <span className="sr-only">GitHub</span>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/marques.henriquevj/" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/lhmarquesdev/" target="_blank" rel="noreferrer">
                 <Instagram className="size-5 text-neutral-400 hover:text-white transition" />
                 <span className="sr-only">Instagram</span>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/luis-henrique-marques-franque-flores-508ba126b/" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/luis-henrique-marques-508ba126b/" target="_blank" rel="noreferrer">
                 <Linkedin className="size-5 text-neutral-400 hover:text-white transition" />
                 <span className="sr-only">LinkedIn</span>
               </a>
