@@ -73,4 +73,4 @@ MIT
 
 ---
 
-Desenvolvido por [Henrique Marques](https://www.linkedin.com/in/lhenrique-marques/)
+Desenvolvido por [Henrique Marques](https://www.linkedin.com/in/lhmarquesdev/)
