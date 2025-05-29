@@ -50,6 +50,7 @@ git clone https://github.com/LHenrique-Marques/devtools-henrique.git
 cd devtools-henrique
 npm install
 npm run dev
+```
 O projeto estará disponível em [http://localhost:3000](http://localhost:3000).
 
 ---
