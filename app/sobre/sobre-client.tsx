@@ -56,14 +56,14 @@ export default function SobreClient() {
         <h2 className="text-2xl font-semibold mb-4">Me encontre também</h2>
         <div className="flex gap-6">
           <Link
-            href="https://github.com/LHenrique-Marques"
+            href="https://github.com/lhmarquesdev"
             className="flex items-center gap-2 hover:text-red-400 transition"
             target="_blank"
           >
             <Github size={20} /> GitHub
           </Link>
           <Link
-            href="https://www.linkedin.com/in/luis-henrique-marques-franque-flores-508ba126b/"
+            href="https://www.linkedin.com/in/luis-henrique-marques-508ba126b/"
             className="flex items-center gap-2 hover:text-red-400 transition"
             target="_blank"
           >
